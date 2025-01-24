@@ -6,9 +6,9 @@
 #include "pico/bootrom.h"
 #include "hardware/pio.h"
 #include "hardware/clocks.h"
-#include "util/matrizLedControl.h"
-#include "util/keypad.h"
-#include "util/drawing.h"
+#include "matrizLedControl.h"
+#include "keypad.h"
+#include "drawing.h"
 
 void menu_message()
 {
