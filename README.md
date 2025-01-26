@@ -20,8 +20,6 @@ SRC
 
 # Funções
 
-...
-
 Comandos do keypad:
   
 [0-9]) Uma animação feita cada uma por um membro da equipe. utilizando 5 frames. A X frames por segundo.
@@ -29,12 +27,21 @@ A) Desliga todos os LEDS
 B) Liga todos os LEDS na cor azul. Intensidade 100%.  
 C) Liga todos os LEDS na cor vermelha. Intensidade 80%.  
 D) Liga todos os LEDS na cor verde. Intensidade 50%.  
-#) Liga todos os LEDS na cor branca. Intensidade 20%. 
-
-...
+\#) Liga todos os LEDS na cor branca. Intensidade 20%. 
 
 # Como compilar
 
-...
+1) Instale a extensão Raspeberry PI PICO do vscode
+2) Compile o código clicando em compile project na aba da extensão, ou rodando o arquivo cmakelist manualmente.
+
+![Como compilar](images/compile_image.png)
+
+# Como rodar
+
+1) Primeiramente compile o código para que a biblioteca ws2818b.pio seja adicionada ao sistema.
+2) Instale a extensão Wokwi do vscode e confira se esta esta corretamente configurada (consulte o site https://docs.wokwi.com/pt-BR/vscode/getting-started em caso de dúvidas)
+3) Abra o arquivo diagram e click no botão de play
+
+![Como compilar](images/wokwi_diagram.png)
 
 # Video do funcionamento
