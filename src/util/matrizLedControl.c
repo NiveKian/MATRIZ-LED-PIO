@@ -10,6 +10,12 @@
 #include "matrizLedControl.h"
 #include "ledStruct.h"
 #include "definitions.h"
+#include "drawing.h"
+#include "ws2818b.pio.h"
+
+
+extern PIO np_pio;
+extern uint sm;
 
 // Definição do pino dos LEDS.
 #define LED_PIN 7
@@ -122,4 +128,34 @@ void changeDrawing(npLED_t newDraw[])
 void startAnimation()
 {
   // CODE
+}
+
+void npDrawFrame(double *frame) {
+    uint32_t valor_led;
+    for (int i = 0; i < 25; i++) {
+        // Adapte para enviar valores RGB para a matriz de LEDs
+        valor_led = matrix_rgb(frame[i] * 0.8, frame[i] * 0.0, frame[i] * 0.0); // Cor vermelha
+        pio_sm_put_blocking(np_pio, sm, valor_led);
+    }
+}
+
+// Função para animação de coração pulsando
+void animar_coracao() {
+    for (int i = 0; i < 3; i++) {
+        npDrawFrame(coracao1);
+        sleep_ms(500); // Tempo de exibição do primeiro frame
+        npDrawFrame(coracao2);
+        sleep_ms(500); // Tempo de exibição do segundo frame
+    }
+}
+
+// matrizLedControl.c
+uint32_t matrix_rgb(double r, double g, double b) {
+    unsigned char R, G, B;
+    R = (unsigned char)(r * 255);  // Red
+    G = (unsigned char)(g * 255);  // Green
+    B = (unsigned char)(b * 255);  // Blue
+
+    // Retorna o valor RGB no formato desejado
+    return (G << 24) | (R << 16) | (B << 8);  // No formato (G << 24) | (R << 16) | (B << 8)
 }

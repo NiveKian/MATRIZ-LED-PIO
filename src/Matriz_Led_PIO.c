@@ -54,7 +54,8 @@ int main()
     switch (press_key)
     {
     case '1':
-      //
+              animar_coracao(); // Chama a animação de coração
+
       break;
     case '2':
       //
@@ -90,8 +91,7 @@ int main()
       break;
 
     case 'C':
-      printf("Todos os LEDs vermelhos, 80%% intensidade.\n");
-      matrizLedControl_setAll(draw_type_C);
+
       break;
     case 'D':
       //

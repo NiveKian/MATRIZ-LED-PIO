@@ -10,6 +10,10 @@ extern npLED_t draw_type_C[25]; // Basic red drawing
 extern npLED_t draw_type_D[25]; // Basic Green drawing
 extern npLED_t draw_type_TAG[25]; // Basic white drawing
 
+extern double coracao1[25];
+extern double coracao2[25];
+
+
 // Export the variables of animations
 extern const npLED_t animation_type1[5][25]; // Ian Antunes - AnimationArray
 
