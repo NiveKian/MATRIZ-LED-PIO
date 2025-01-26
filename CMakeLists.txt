@@ -67,6 +67,7 @@ target_link_libraries(Matriz_Led_PIO
         hardware_pio
         pico_cyw43_arch_none
         hardware_clocks
+        hardware_pwm
         )
 
 

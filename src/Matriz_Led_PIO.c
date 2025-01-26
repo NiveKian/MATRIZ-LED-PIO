@@ -82,7 +82,7 @@ int main()
       break;
     case '9':
       clean_leds();
-      changeDrawing(animation_type9);
+      animation_type9();
       break;
     case 'A':
       clean_leds();
