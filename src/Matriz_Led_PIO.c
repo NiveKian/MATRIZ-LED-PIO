@@ -11,6 +11,8 @@
 #include "util/drawing.h"
 #include "pico/bootrom.h"
 
+#include "util/canario_draw.h"
+
 
 void menu_message()
 {
@@ -79,7 +81,8 @@ int main()
       //
       break;
     case '9':
-      //
+      clean_leds();
+      changeDrawing(animation_type9);
       break;
     case 'A':
       clean_leds();

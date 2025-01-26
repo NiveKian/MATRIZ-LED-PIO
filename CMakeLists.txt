@@ -39,6 +39,7 @@ add_executable(Matriz_Led_PIO
     src/util/drawing.c
     src/util/keypad.c
     src/util/matrizLedControl.c
+    src/util/canario_draw.c
 )
 
 pico_set_program_name(Matriz_Led_PIO "Matriz_Led_PIO")

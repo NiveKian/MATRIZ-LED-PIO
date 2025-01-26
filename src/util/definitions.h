@@ -6,7 +6,7 @@
 
 // Quantidade de Frames da animação
 #define FRAMES 5
-
+#define FRAMES_CANARIO 13
 // Quantidade de LEDS
 #define LED_COUNT 25
 
