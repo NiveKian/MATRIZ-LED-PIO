@@ -49,5 +49,6 @@
         "pins.h": "c",
         "bootrom.h": "c",
         "cstdint": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

@@ -21,11 +21,13 @@ void convertToRGB(int argb, int rgb[3])
 int main()
 {
     // Matriz de entrada com os valores ARGB
-    int argb_values[MATRIX_ROWS * MATRIX_COLS] = {0xff2af5f1, 0xff2af5f1, 0xff2af5f1, 0xff2af5f1, 0xff2af5f1,
-                                                  0xff2af5f1, 0xff2af5f1, 0xff2af5f1, 0xff2af5f1, 0xff2af5f1,
-                                                  0xff2af5f1, 0xff2af5f1, 0xff2af5f1, 0xff2af5f1, 0xff2af5f1,
-                                                  0xff2af5f1, 0xff2af5f1, 0xff2af5f1, 0xff2af5f1, 0xff0404ff,
-                                                  0xff2af5f1, 0xff2af5f1, 0xff2af5f1, 0xff0404ff, 0xff0404ff};
+    int argb_values[MATRIX_ROWS * MATRIX_COLS] = {
+0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+0x00000000, 0xff0e0ef5, 0x00000000, 0xff0e0ef5, 0x00000000, 
+0x00000000, 0xff0e0ef5, 0xff0e0ef5, 0xff0e0ef5, 0x00000000, 
+0x00000000, 0x00000000, 0xff0e0ef5, 0x00000000, 0x00000000, 
+0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000 
+};
 
     // Matriz 5x5x3 para armazenar os valores RGB
     int rgb_matrix[MATRIX_ROWS][MATRIX_COLS][MATRIX_DEPTH];
