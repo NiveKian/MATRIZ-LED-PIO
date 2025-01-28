@@ -10,6 +10,8 @@
 #include "util/keypad.h"
 #include "util/drawing.h"
 #include "pico/bootrom.h"
+#include "buzzer.h"  // Inclua o cabeçalho do buzzer
+
 
 void menu_message()
 {

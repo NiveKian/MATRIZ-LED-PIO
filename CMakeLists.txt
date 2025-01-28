@@ -39,6 +39,7 @@ add_executable(Matriz_Led_PIO
     src/util/drawing.c
     src/util/keypad.c
     src/util/matrizLedControl.c
+    src/util/buzzer.c
 )
 
 pico_set_program_name(Matriz_Led_PIO "Matriz_Led_PIO")
@@ -66,6 +67,8 @@ target_link_libraries(Matriz_Led_PIO
         hardware_pio
         pico_cyw43_arch_none
         hardware_clocks
+        hardware_pwm
+        stdio
         )
 
 
