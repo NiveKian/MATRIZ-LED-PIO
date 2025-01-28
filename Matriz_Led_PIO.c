@@ -62,7 +62,8 @@ int main()
       //
       break;
     case '4':
-      //
+       printf("Animação iniciada: Emerson Novais Oliveira.\n");
+      startAnimation(animation_type4);
       break;
     case '5':
       //
