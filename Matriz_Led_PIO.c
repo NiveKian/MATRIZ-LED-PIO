@@ -52,6 +52,10 @@ int main()
       printf("Tecla pressionada: %c\n", press_key);
     switch (press_key)
     {
+    case '0':
+      printf("Animação iniciada: Emerson Novais Oliveira.\n");
+      startAnimation(animation_type0);
+      break;
     case '1':
       //
       break;
@@ -62,8 +66,7 @@ int main()
       //
       break;
     case '4':
-       printf("Animação iniciada: Emerson Novais Oliveira.\n");
-      startAnimation(animation_type4);
+      //
       break;
     case '5':
       //

@@ -7,9 +7,9 @@
 #include "hardware/pio.h"
 #include "hardware/clocks.h"
 #include "ws2818b.pio.h"
-#include "matrizLedControl.h"
-#include "ledStruct.h"
-#include "definitions.h"
+#include "util/matrizLedControl.h"
+#include "util/ledStruct.h"
+#include "util/definitions.h"
 
 // Definição do pino dos LEDS.
 #define LED_PIN 7
