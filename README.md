@@ -23,6 +23,35 @@ SRC
 Comandos do keypad:
   
 [0-9]) Uma animação feita cada uma por um membro da equipe. utilizando 5 frames. A X frames por segundo.
+5) Animação dos quadrados.
+
+   Representação em imagem :
+![Imagem] (imagens/Botão 5.png)
+6) Animação do coração pulsando.
+
+ Representação em imagem :
+![Imagem] (imagens/Botão 6.png)
+7) Animação dos relacionamnetos atuais.
+
+    1- carinha triste
+    2- coração (se apaixonou)
+    3- carinha feliz
+    4- carinha surpreso (descobriu uma traição)
+    5- ficou triste novamente
+
+ Representação em imagem:
+![Imagem] (imagens/Botão 7.png)
+8) Animação semáforo.
+
+    1-semáforo com todos os leds ligados
+    2-Liga a cor vermelha (Pare)
+    3-Liga a cor laranja (Atenção diminua a velocidade)
+    4-Liga a cor verde (Seguir)
+    5-Um carro (Para demonstrar que está seguindo caminho)
+
+ Representação em imagem:
+![Imagem] (imagens/Botão 8.png)
+
 A) Desliga todos os LEDS  
 B) Liga todos os LEDS na cor azul. Intensidade 100%.  
 C) Liga todos os LEDS na cor vermelha. Intensidade 80%.  
